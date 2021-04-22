@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+
+
+<!-- custom cursor -->
+ <div class="cursor-outer"></div>
+ <div class="cursor-inner"></div>
+<!-- end -->
+
+
+<main data-scroll-container>
+	<header data-scroll-section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="p-rel">
+						<div class="headerMain">
+							<a href="#"><span class="xtm-logo inview_item inview_item-reveal activeMouse"data-scroll="" style="--inview-delay: 0.375s">holistic VaSu</span></a>
+							<a href="#" id="target"><i class='fa fa-moon change-theme xtm-logo inview_item inview_item-reveal activeMouse' data-scroll="" style="--inview-delay: 0.375s" id="theme-button"></i></a>
+						</div>
+						<div class="headprnt">
+							<h1 class="mnheading"data-scroll="" data-transform-type="skew">
+								<span class="headpart inview_item inview_item-reveal n0-delay"data-scroll="" style="--inview-delay: 0.125s" data-scroll="" data-scroll-speed="3" data-scroll-position="top">Welcome I'm</span>
+								<span class="headpart inview_item inview_item-reveal n0-delay"data-scroll="" style="--inview-delay: 0.375s" data-scroll="" data-scroll-speed="2" data-scroll-position="top">Vasu</span>
+							</h1>
+						</div>
+						<div class="d-flx">
+							<span class="p-abs logos_item inview_item inview_item-reveal n0-delay activeMouse" data-scroll="" style="--inview-delay: 0.250s"data-scroll="" data-scroll-speed="1" data-scroll-position="top">Designer</span>
+							<span class="p-abs inview_item inview_item-reveal n0-delay activeMouse" data-scroll="" style="--inview-delay: 0.250s"data-scroll="" data-scroll-speed="1" data-scroll-position="top">Based in India</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section data-scroll-section id="custom-row">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mg-auto">
+					<div class="about-me">
+						<h4 class="single-heading inview_item inview_item-reveal"data-scroll="" style="--inview-delay: 0.375s"><span class="mcolor activeMouse">Hello</span> and welcome! I'm a 
+							<span class="mcolor activeMouse">designer</span> based in <span class="mcolor activeMouse">India</span>, practizing in visual brand identity, UI/UX design.</h4>
+						<h4 class="single-heading inview_item inview_item-reveal"data-scroll="" style="--inview-delay: 0.375s">I enjoy creating <span class="mcolor activeMouse">designs</span>, that help people and make a <span class="mcolor activeMouse">difference</span> :)</h4>		
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+
+	<section data-scroll-section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="headprnt" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+						<h2 class="secheading">
+							<span class="headpart inview_item inview_item-reveal n0-delay"data-scroll="" style="--inview-delay: 0.125s">Say Hello</span>
+							<span class="headpart inview_item inview_item-reveal n0-delay"data-scroll="" style="--inview-delay: 0.250s">to me</span>
+						</h2>
+					</div>
+					<div class="socials"data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+						<span class="sal-ac"><a class="no-tex inview_item inview_item-reveal n0-delay activemousebig" data-scroll="" style="--inview-delay: 0.375s""" href="#" >E-mail</a></span>
+						<span class="sal-ac"><a class="no-tex inview_item inview_item-reveal n0-delay activemousebig" data-scroll="" style="--inview-delay: 0.375s""" href="#" >Instagram</a></span>
+						<span class="sal-ac"><a class="no-tex inview_item inview_item-reveal n0-delay activemousebig" data-scroll="" style="--inview-delay: 0.375s""" href="#" >Facebook</a></span>
+						<span class="sal-ac"><a class="no-tex inview_item inview_item-reveal n0-delay activemousebig" data-scroll="" style="--inview-delay: 0.375s""" href="#" >Codepen</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer data-scroll-section>
+		<div class="footerWrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<a href="#"><span class="xtm-logo inview_item inview_item-reveal activeMouse" data-scroll="" style="--inview-delay: 0.125s">Site By Vasu</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</main>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/cursor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="https://kit.fontawesome.com/6c50b8b1c7.js" crossorigin="anonymous"></script>
+<script>
+	  const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+</script>
+</body>
+</html>

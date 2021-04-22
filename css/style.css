@@ -1,0 +1,365 @@
+@font-face {
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url(../fonts/syne-v1-latin-regular.woff2) format("woff2"), url(../fonts/syne-v1-latin-regular.woff) format("woff");
+}
+@font-face {
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url(../fonts/syne-v1-latin-700.woff2) format("woff2"), url(../fonts/syne-v1-latin-700.woff) format("woff");
+}
+body {
+    background-color: var(--body-color);
+    color: var(--first-color);
+    line-height: 1.5;
+    font-family: Syne, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all 1s;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0 !important;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+:root {
+    --body-color: #f7f7f5;
+    --first-color: #212120;
+    --main-color: #1a25ab;
+    --body-color: #f7f7f5;
+    --cursor-color: #8790fc;
+    :marker;
+}
+body.dark-theme {
+    --body-color: #212120;
+    --first-color: #f7f7f5;
+    --body-color: #212120;
+    --main-color: #fff714;
+    --cursor-color: #fff;
+    transition: all 1s;
+}
+.mcolor {
+    color: var(--main-color);
+    animation: hoverAnim 1s infinite;
+}
+.mg-auto {
+    margin: auto;
+}
+.headerMain {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+.xtm-logo {
+    color: var(--first-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.headprnt {
+    padding: 85px 0;
+}
+.headpart {
+    display: block;
+}
+.mnheading {
+    font-size: 8.33333vw;
+    line-height: 1.125;
+    text-align: center;
+    color: var(--main-color);
+}
+.secheading {
+    line-height: 1.125;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 8.33333vw;
+}
+.p-abs {
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: var(--first-color);
+    font-size: 16px;
+}
+.d-flx {
+    display: flex;
+    justify-content: space-between;
+}
+.my-yo {
+    display: block;
+    font-size: 80px;
+    color: var(--first-color);
+}
+.my-types {
+    text-align: center;
+}
+.c-scrollbar_thumb {
+    background-color: var(--first-color);
+}
+#custom-row .row {
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    border: solid 1.5px var(--first-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.absoluteimg img {
+    filter: invert(1);
+    height: 140px;
+    width: 140px;
+    -webkit-animation: round 3s linear infinite;
+    animation: round 3s linear infinite;
+}
+.no-tex {
+    color: transparent;
+    font-size: 100.215px;
+    text-align: center;
+    font-weight: 700;
+    -webkit-text-stroke: 1px var(--first-color);
+    color: transparent;
+    transition: all 0.5s;
+    font-family: neue_montrealbold;
+}
+.no-tex:hover{webkit-stroke-color var(--body-color); color: var(--first-color); transition: all 0.5s;}
+.footerWrap {
+    padding: 25px 0;
+    text-align: center;
+}
+.footerWrap .xtm-logo {
+    font-size: 16px;
+    font-weight: 100;
+}
+.order-2 {
+    order: 1 !important;
+}
+.order-1 {
+    order: 2 !important;
+}
+.about-me {
+    padding: 185px 0;
+}
+.single-heading {
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 1.75;
+    color: var(--first-color);
+    font-weight: 500;
+}
+.sal-ac {
+    display: block;
+    text-align: center;
+}
+.no-tex {
+    display: inline-block;
+}
+.inview_item-reveal.is-inview {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.inview_item-reveal {
+    opacity: 0;
+    -webkit-transform: translateY(100%) scale(0.875) rotateX(-90deg);
+    transform: translateY(100%) scale(0.875) rotateX(-90deg);
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: opacity 1s, -webkit-transform 2s cubic-bezier(0.25, 1, 0.25, 1);
+    transition: opacity 1s, -webkit-transform 2s cubic-bezier(0.25, 1, 0.25, 1);
+    -o-transition: opacity 1s, transform 2s cubic-bezier(0.25, 1, 0.25, 1);
+    transition: opacity 1s, transform 2s cubic-bezier(0.25, 1, 0.25, 1);
+    transition: opacity 1s, transform 2s cubic-bezier(0.25, 1, 0.25, 1), -webkit-transform 2s cubic-bezier(0.25, 1, 0.25, 1);
+    -webkit-transition-delay: var(--inview-delay);
+    -o-transition-delay: var(--inview-delay);
+    transition-delay: var(--inview-delay);
+}
+
+.n0-delay {
+    --inview-delay: 0 !important;
+}
+main {
+    padding: 0;
+}
+
+@keyframes hoverAnim {
+    0%,
+    100% {
+        text-shadow: 0 0 0 rgba(217, 22, 22, 0.6);
+    }
+    10% {
+        text-shadow: 2px 2px 2px rgba(217, 22, 22, 0.4);
+    }
+    20% {
+        text-shadow: -2px -2px 2px rgba(217, 22, 22, 0.6);
+    }
+    30% {
+        text-shadow: -2px 2px 2px rgba(217, 22, 22, 0.4);
+    }
+    40% {
+        text-shadow: -6px 2px 2px rgba(217, 22, 22, 0.6);
+    }
+    50% {
+        text-shadow: 4px -2px 2px rgba(217, 22, 22, 0.4);
+    }
+    60% {
+        text-shadow: -2px -2px 2px rgba(217, 22, 22, 0.6);
+    }
+    70% {
+        text-shadow: 6px 4px 2px rgba(217, 22, 22, 0.4);
+    }
+    80% {
+        text-shadow: 2px 0 2px rgba(217, 22, 22, 0.6);
+    }
+    90% {
+        text-shadow: 0 -2px 2px rgba(217, 22, 22, 0.4);
+    }
+}
+.cursor-outer {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background: var(--cursor-color);
+    mix-blend-mode: luminosity;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0s ease-out;
+    -moz-transition: opacity 0.3s 0s ease-out;
+    -o-transition: opacity 0.3s 0s ease-out;
+    transition: opacity 0.3s 0s ease-out;
+}
+.cursor-outer.show {
+    opacity: 1;
+}
+.cursor-outer:after {
+    content: "";
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1.5px solid var(--main-color);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+.cursor-outer.active:after {
+    opacity: 1;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+}
+.cursor-inner {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    z-index: 11;
+    margin-left: -2px;
+    margin-top: -2px;
+    border-radius: 50%;
+    background: var(--main-color);
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0s ease-out;
+    -moz-transition: opacity 0.3s 0s ease-out;
+    -o-transition: opacity 0.3s 0s ease-out;
+    transition: opacity 0.3s 0s ease-out;
+}
+.cursor-inner.show {
+    opacity: 1;
+}
+.activebig:after {
+    opacity: 1;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+}
+
+
+
+
+
+
+@media (max-width: 1199.98px) {
+    .headprnt {padding: 75px 0;}
+    .about-me {padding: 125px 0;}
+    .about-me {padding: 75px 0;}
+    .single-heading {margin-bottom: 0;}
+}
+@media (max-width: 991.98px) {
+    .headprnt {padding: 65px 0;}
+    .about-me {padding: 65px 0;}
+    .no-tex {color: transparent;font-size: 80.215px;}
+    .headerMain {padding: 25px 0;}
+    .xtm-logo {font-size: 22px;}
+    .cursor-outer{display: none;}
+    .cursor-inner{display: none;}
+}
+@media (max-width: 767.98px) {
+    .headprnt {padding: 55px 0;}
+    .headerMain {padding: 22px 0;}
+    .xtm-logo {font-size: 22px;}
+    .about-me {padding: 55px 0;}
+    .single-heading {font-size: 28px;}
+    .no-tex {color: transparent;font-size: 65.215px;}
+}
+@media (max-width: 575.98px) {
+    .headprnt {padding: 45px 0;}
+    .single-heading {font-size: 22px;text-align: center;margin-bottom: 15px !important;}
+    .about-me { padding: 45px 0 15px;}
+    .no-tex {color: transparent;font-size: 55.215px;}
+    .footerWrap {padding: 15px 0;}
+    main {padding: 0 8px;}
+}
+
+
+@media (max-width: 375px) {
+    .headerMain {padding: 22px 0;}
+    .headprnt {padding: 45px 0;}
+    .my-yo {font-size: 40px;}
+    .absoluteimg img {height: 100px;width: 100px;}
+    .no-tex {font-size: 40px;}
+    .xtm-logo {font-size: 20px;}
+    .absoluteimg {text-align: center;}
+    .order-2 {order: 2 !important;}
+    .order-1 {order: 1 !important;}
+    .single-heading {
+        font-size: 20px;}
+}
