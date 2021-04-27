@@ -1,10 +1,5 @@
 
-/*==================== SHOW MENU ====================*/
-
-
-
-
-/*==================== SHOW MENU ====================*/
+// toggle class
 
 
 $( "#target" ).click(function(){
@@ -12,11 +7,8 @@ $( "#target" ).click(function(){
   $('#theme-button').toggleClass('fa-sun');
  });
 
-// var cursor = document.querySelector(".cursor");
-//     var cursor2 = document.querySelector(".cursor2");
-//     document.addEventListener("mousemove",function(e){
-//       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-//     });
+
+// cursor
 
 var currentMousePos = { x: -1, y: -1 };
 
@@ -28,6 +20,7 @@ $(document).ready(function() {
         $(".cursor-inner, .cursor-outer").removeClass("show");
     });
 
+
     $(window).mousemove(function(event) {
         $(".cursor-inner, .cursor-outer").addClass("show");
         var currentX = currentMousePos.x = event.pageX;
@@ -38,20 +31,26 @@ $(document).ready(function() {
         }, 100);
     });
     
+
     $(".activeMouse").hover(function(){
         $(".cursor-outer").addClass("active");
     }, function () {
         $(".cursor-outer").removeClass("active");
     });
 
+
     $(".activemousebig").hover(function(){
         $(".cursor-outer").addClass("activebig");
     }, function () {
         $(".cursor-outer").removeClass("activebig");
     });
-    
+
+
 }); 
 
+
+
+// reveal
 
      function y(t, e) {
             (null == e || e > t.length) && (e = t.length);
@@ -71,8 +70,7 @@ $(document).ready(function() {
                 class: "is-inview",
             }
 
-
-
+// end
 
 
 
