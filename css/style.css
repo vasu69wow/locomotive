@@ -201,7 +201,8 @@ transform: translateX(10px);}
     .footerWrap {padding: 15px 0;}
     main {padding: 0 8px;}
     .btn-text{display: none;}
-    .scroll-indicator {left: 1rem;}
+    .scroll-indicator {display: none;}
+    
 }
 
 
