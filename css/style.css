@@ -153,7 +153,7 @@ transform: translateX(10px);}
 .loader-header-container {top: 5vw;}
 .loader-header-container{position: fixed;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);width: 100%; text-align: center;}
 .loader-header{margin: 0; color: #fff;font-size: 18px;letter-spacing: 1px;}
-.bg-dark {background-color: #1a1a1a!important;}
+.bg-blck {background-color: #1a1a1a!important;}
 
 
 
