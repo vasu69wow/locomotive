@@ -203,7 +203,7 @@ transform: translateX(10px);}
     main {padding: 0 8px;}
     .btn-text{display: none;}
     .scroll-indicator {display: none;}
-    .noise::before{didplay: none;}
+    .noise::before{opacity: .01;}
     
 }
 
